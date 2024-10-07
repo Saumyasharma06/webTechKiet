@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        .container {
+            /* width: 300px; */
+            margin: 0 auto;
+            /* text-align: center; */
+            max-width: fit-content;
+        }
+        /* form {
+            text-align: left;
+        } */
+    </style>
+</head>
+<body>   
+    <div class="container">
+        <h1>Forms example</h1>
+        <form action="abc.jsp" method="post" enctype="multipart/form-data">
+            <label for="name">Enter your name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter name"/><br>
+            <input type="password" name="pass" id="pass" placeholder="Enter password"/><br>
+            <input type="number" name="age" id="age" placeholder="Enter age" min="10" max="100" style="width: 160px;"/><br>
+            <input type="email" name="email" id="email" placeholder="Enter email"/><br>
+            <input type="file" name="file" id="file"/><br>
+            <input type="color" name="color" id="color"/><br>
+            <input type="datetime-local" name="date" id="date"/><br>
+
+            <label for="lang">Choose your best language</label><br>
+            <input type="radio" name="lang" id="java"/>Java<br/>
+            <input type="radio" name="lang" id="javascript"/>JavaScript<br/>
+            <input type="radio" name="lang" id="kotlin"/>Kotlin<br/>
+
+            <label for="lang">Choose your best language</label><br>
+            <input type="checkbox" name="lang1" id="lang1"/>Java<br/>
+            <input type="checkbox" name="lang2" id="lang2"/>JavaScript<br/>
+            <input type="checkbox" name="lang3" id="lang3"/>Kotlin<br/>
+
+            <input type="submit" name="submit" id="submit" value="send"/>
+            <input type="reset" name="reset" id="reset" value="clear"/>
+        </form>
+    </div>
+</body>
+</html>

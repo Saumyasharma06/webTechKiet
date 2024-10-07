@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #FFFF99; 
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+li::before {
+    content: "• ";
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}

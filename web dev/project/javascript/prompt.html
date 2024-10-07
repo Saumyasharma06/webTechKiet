@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pid"></p>
+    <button type="button" onclick="table()"></button>
+    
+
+    <script>
+        //function add(){
+        //    num1=prompt("Enter num1","0");
+        //    num2=prompt("Enter num2","0");
+        //    let s= parseInt(num1)+parseInt(num2);
+        //    alert( sum of number is=${s})
+        //    console.log(sum of 2 number is ${s})
+        //}
+        //add();
+
+
+        
+        function table(){
+            let ptable = document.getElementById("pid");
+            let value=prompt("Enter the number=");
+            value=parseInt(value);
+
+            for(let i =0;i<=10;i++){
+                ptable.innerHTML+=value+"*"+i+"="+(value * i)+"<br>"
+            }
+
+        }
+        table();
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: orchid;
+}
+
+.container {
+    background-color:orchid; 
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+}

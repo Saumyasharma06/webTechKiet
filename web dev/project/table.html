@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table tags</title>
+    <style>
+        th,td{
+            padding: 5px;
+            border: 1px solid green;
+            
+        }
+        table{
+            border-spacing: 0;
+        }
+        tr:nth-child(even):hover{
+            background-color: cadetblue;
+            color:white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>student information</h1>
+    <table border="2" bgcolor="sky blue" >
+    <thead>
+        <tr>
+            <th colspan="2">name</th>
+            <th rowspan="2">address</th>
+            <th rowspan="2">age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>first name</th>
+            <th>last name</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>saumya</td>
+            <td>Sharma</td>
+            <td>kiet</td>
+            <td>22</td>
+        </tr>
+        <tr></tr>
+            <td>Disha</td>
+            <td>Gupta</td>
+            <td>kiet</td>
+            <td>23</td>
+        </tr>
+        <tr></tr>
+            <td>xyz</td>
+            <td>efg</td>
+            <td>kiet</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

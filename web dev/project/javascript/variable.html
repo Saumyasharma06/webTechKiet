@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Value in P</p>
+    <button type="button" onclick="checkVariable();">Show result</button>
+    <script>
+        var num="string";
+        const checkVariable=()=>{
+            let num=10;
+            // num="this is variable";
+            // num=[1234,12,1];
+            // num=12.4;
+            // num=function abc(){}
+            document.getElementById("demo").innerHTML=typeof num;
+        }
+        checkVariable();
+        document.getElementById("demo").innerHTML=typeof num;
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pid">This is p tag in HTML</p>
+    <button type="button" id="new">Show result</button>
+    <script>
+        let btn=document.getElementById("new");
+        btn.addEventListener("click",changeP);
+        const changeP=()=>{
+            let pid=document.getElementById("pid");
+            pid.innerHTML="<h2>this is changed by js button</h2>";
+
+        }
+    </script>
+</body>
+</html>

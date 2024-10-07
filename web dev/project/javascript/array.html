@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays in JS</h1>
+    <p id="aValue1"></p>
+    <p id="aValue2"></p>
+    <p id="aValue3"></p>
+    <script>
+        let av1 = document.getElementById("aValue1");
+        let av2 = document.getElementById("aValue2");
+        let av3 = document.getElementById("aValue3");
+
+        let arrayT1 = new Array();
+        arrayT1[0] = 23;
+        arrayT1[1] = "JS Array";
+        arrayT1[2] = 34.26;
+        arrayT1[3] = true;
+
+        av1.innerHTML = arrayT1;
+
+        let arrayT2 = new Array("Hello JS", 23, 24.6, false, function hello() { alert("Hello"); });
+        
+        av2.innerHTML = arrayT2;
+
+        let arrayT3 = [23, [23, 45, 6, "hello"], true, 33.5];
+        av3.innerHTML = arrayT3[1][3];
+    </script>
+</body>
+</html>

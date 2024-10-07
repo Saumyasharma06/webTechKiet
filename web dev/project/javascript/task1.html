@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>Sum:</p>
+   <p id="new">Sum is</p>
+    <button type="button" id="btn" >sum</button>
+   
+</body>
+<script>
+//     let a=5;
+//     let b=10;
+//     c=a+b;
+//    const x=()=>{
+//     let z=document.getElementById("new");
+//     z.innerText=c;
+
+//    }
+const sum=()=>{
+    let a=10;
+    let b=6;
+    c=a+b;
+    let abc=document.getElementById("new");
+    abc.innerText=c;
+    
+}
+let b=document.getElementById("btn");
+b.addEventListener("click",sum);
+
+</script>
+</html>

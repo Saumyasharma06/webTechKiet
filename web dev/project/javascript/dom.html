@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <button id="btn1">PathName</button>
+    <button id="btn2">Protocol</button>
+    <button id="btn3">Location</button>
+    <button id="btn4">Assign</button>
+    <button id="btn5">Back</button>
+    <button id="btn6">Forward</button>
+    
+
+</body>
+<script>
+    document.getElementById("btn").addEventListener("click", () => {
+        window.open("http://lms.kiet.edu/moodle/login/index.php");
+    });
+
+    document.getElementById("btn1").addEventListener("click", () => {
+        let a=window.location.pathname;
+        alert(a);
+    });
+    document.getElementById("btn2").addEventListener("click", () => {
+        let b=window.location.protocol;
+        alert(b);
+    });
+
+    document.getElementById("btn3").addEventListener("click", () => {
+        let b=window.location.herf;
+        alert(b);
+    });
+    document.getElementById("btn4").addEventListener("click", () => {
+        let b=window.location.assign("http://lms.kiet.edu/moodle/login/index.php");
+    });
+    document.getElementById("btn5").addEventListener("click", () => {
+        let b=window.history.back();
+        alert(b);
+    });
+    document.getElementById("btn6").addEventListener("click", () => {
+        let b=window.history.forward();
+    });
+
+</script>
+</html>
